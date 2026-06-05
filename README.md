@@ -9,7 +9,7 @@ purchasing power in Indonesia. Accurate short-term forecasting
 supports government intervention and market stability decisions.
 
 ## Data
-- **Source:** Badan Pangan Nasional (BPN)
+- **Source:** Badan Pusat Statistik (BPS)
 - **Period:** January 2019 – June 2023 (54 months)
 - **Variables:** Premium rice price, Medium rice price (IDR/kg)
 - **Split:** 48 months training / 6 months testing (Jul–Dec 2023)
