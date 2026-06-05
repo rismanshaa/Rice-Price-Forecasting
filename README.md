@@ -34,5 +34,5 @@ confirming model adequacy.
 ## Files
 - `FINAL_ARIMA.R` — full analysis script (data prep, modeling, forecast,
   visualization)
-- `Journal_TSA.docx` — research paper published at Proceedings of the
+- `Journal_Rice_Prices` — research paper published at Proceedings of the
   Fifth Symposium on Data Science 2026
