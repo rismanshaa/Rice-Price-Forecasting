@@ -32,7 +32,5 @@ Both models passed the residual white noise test (Ljung-Box p > 0.05),
 confirming model adequacy.
 
 ## Files
-- `FINAL_ARIMA.R` — full analysis script (data prep, modeling, forecast,
-  visualization)
-- `Journal_Rice_Prices` — research paper published at Proceedings of the
-  Fifth Symposium on Data Science 2026
+- [FINAL_ARIMA.R](FINAL_ARIMA.R) — full analysis script (data prep, modeling, forecast, visualization)
+- [Journal_Rice_Prices.docx](Journal_Rice_Prices.docx) — research paper published at Proceedings of the Fifth Symposium on Data Science 2026
