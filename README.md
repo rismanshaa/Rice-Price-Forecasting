@@ -39,7 +39,7 @@ The data consists of **54 monthly observations** of premium and medium rice pric
 
 Both series move within a fairly narrow band across most of the study period, but show a marked upward shift starting around late 2022 into 2023 — a shift that later proves relevant to how well the model's forecasts hold up against the actual test-period prices (see [Forecast Accuracy](#forecast-accuracy)).
 
-![Training data: premium and medium rice prices, Jan 2019–Jun 2023](plots/training_data.jpeg)
+![Training data: premium and medium rice prices, Jan 2019–Jun 2023](asset/training_data.jpeg)
 
 ## Tools
 
@@ -57,7 +57,7 @@ Both the premium and medium price series were tested for stationarity using the 
 
 Candidate values of p (autoregressive order) and q (moving average order) were identified from the ACF and PACF plots of the differenced series. Combining these with the fixed d = 2, **16 candidate ARIMA models** were specified for each price series (p, q ∈ {0,1,2,3}) and evaluated using Akaike Information Criterion (AIC) and Bayesian Information Criterion (BIC). The five models with the lowest AIC for each series were carried forward:
 
-![ACF and PACF of the differenced premium rice price series](plots/acf_pacf_premium.jpeg)
+![ACF and PACF of the differenced premium rice price series](asset/acf_pacf_premium.jpeg)
 
 | Model | ARIMA(p,2,q) | AIC (Premium) | AIC (Medium) |
 |---|---|---|---|
@@ -89,13 +89,13 @@ Y_t = 0.5070 * Y_(t-1) + e_t − 0.9446 * e_(t-1)
 
 Both series settle on structurally identical model orders with similar coefficient magnitudes, which is itself a notable result — it suggests premium and medium rice prices in Indonesia move according to a similar short-term dependency structure, even though their price levels differ.
 
-![Residual plot of the final ARIMA(1,2,1) model, premium rice price series](plots/residual_premium.jpeg)
+![Residual plot of the final ARIMA(1,2,1) model, premium rice price series](asset/residual_premium.jpeg)
 
 ## Results and Discussion
 
 The fitted ARIMA(1,2,1) model was used to forecast both price series six months ahead, from July to December 2023, at a 95% confidence interval, and the forecasts were then compared against the actual prices realized over that period.
 
-![Forecast vs. actual prices, July–December 2023](plots/forecast.jpeg)
+![Forecast vs. actual prices, July–December 2023](asset/forecast.jpeg)
 
 For most of the six-month horizon, the model tracked actual prices closely. The premium series forecast for July (11,888 vs. an actual 11,866) and August (11,953 vs. 11,896) were both within roughly 60 IDR of the observed value. The medium series showed a similar pattern in the earliest forecast months.
 
@@ -133,7 +133,7 @@ At the same time, the forecast's growing divergence from actual prices in the fi
 FINAL_ARIMA.R              R script covering data preparation, stationarity testing,
                             model specification, diagnostics, and forecasting
 Journal_Rice_Prices.docx    Full academic paper documenting the study
-plots/                      R-generated plots referenced throughout this README
+asset/                      R-generated plots referenced throughout this README
 LICENSE                     MIT License
 ```
 
@@ -148,7 +148,7 @@ Raw data (monthly premium and medium rice prices, BPS, 2019–2023) is hosted se
 
 ## Author
 
-Risma Choerunnisa and Berliana Indah Aliyanti
+Risma Choerunnisa and Berliana Indah
 Study of Actuarial Science, School of Business, President University
 [GitHub](https://github.com/rismanshaa) · [Live project page](https://rismanshaa.github.io/Rice-Price-Forecasting/)
 
